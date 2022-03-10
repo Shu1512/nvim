@@ -1,4 +1,4 @@
-# neovim
+# nvim
 
 ### Plugins
 1. Shougo/dein.vim
