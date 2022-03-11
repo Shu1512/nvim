@@ -27,7 +27,7 @@
 20. w0rp/ale
 21. vim-airline/vim-airline
 22. vim-airline/vim-airline-themes
-23. posva/vim-vue
+23. vim-polyglot
 
 ### nvim-lsp
 ```
