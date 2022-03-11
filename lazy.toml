@@ -250,6 +250,6 @@ let g:airline#extensions#default#section_truncate_width = {}
 let g:airline#extensions#whitespace#enabled = 1
 '''
 
-[[pluginsn]]
-repo = 'posva/vim-vue'
-on_path = '.vue'
+[[plugins]]
+repo = 'sheerun/vim-polyglot'
+on_path = '.*'
