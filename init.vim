@@ -195,3 +195,7 @@ autocmd BufRead,BufNewFile *.md  set filetype=markdown
 " nnoremap <silent> <C-m> :PrevimOpen<CR>
 let g:vim_markdown_conceal = 0
 let g:vim_markdown_conceal_code_blocks = 0
+" quickfix
+nnoremap cl :ccl<CR>
+nnoremap cn :cnext<CR>
+nnoremap cp :cprev<CR>

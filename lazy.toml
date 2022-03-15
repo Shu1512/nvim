@@ -175,10 +175,6 @@ repo = 'tpope/vim-surround'
 on_path = '.*'
 
 [[plugins]]
-repo = 'thinca/vim-qfreplace'
-on_path = '.*'
-
-[[plugins]]
 repo = 'junegunn/fzf.vim'
 on_path = '.*'
 hook_source = '''
@@ -278,10 +274,15 @@ let g:airline#extensions#whitespace#enabled = 1
 repo = 'sheerun/vim-polyglot'
 on_path = '.*'
 
-[[plugins]]
-repo = "kyoh86/vim-ripgrep",
+[[plugins]] # Run your favorite search tool from Vim
+repo = 'mileszs/ack.vim'
 on_path = '.*'
 hook_add = '''
-  let g:rg_command = 'rg --vimgrep -S'
-  command! -nargs=* -complete=file Ripgrep :call ripgrep#search(<q-args>)
+  if executable('rg')
+    let g:ackprg = 'rg --vimgrep'
+  endif
 '''
+
+[[plugins]] # Modifiable within quickfix
+repo = 'stefandtw/quickfix-reflector.vim'
+on_path = '.*'
