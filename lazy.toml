@@ -292,4 +292,10 @@ repo = 'pechorin/any-jump.vim'
 on_path = '.*'
 hook_add = '''
 nnoremap  <leader> j：AnyJump <CR>
+xnoremap <leader>j :AnyJumpVisual<CR>
+nnoremap <leader>ab :AnyJumpBack<CR>
+nnoremap <leader>al :AnyJumpLastResults<CR>
+let g:any_jump_list_numbers = 0
+let g:any_jump_grouping_enabled = 0
+let g:any_jump_search_prefered_engine = 'rg'
 '''
