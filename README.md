@@ -28,6 +28,9 @@
 21. vim-airline/vim-airline
 22. vim-airline/vim-airline-themes
 23. vim-polyglot
+24. pechorin/any-jump.vim
+25. mileszs/ack.vim'
+26. stefandtw/quickfix-reflector.vim
 
 ### nvim-lsp
 ```
