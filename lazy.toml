@@ -286,3 +286,10 @@ hook_add = '''
 [[plugins]] # Modifiable within quickfix
 repo = 'stefandtw/quickfix-reflector.vim'
 on_path = '.*'
+
+[[plugins]]
+repo = 'pechorin/any-jump.vim'
+on_path = '.*'
+hook_add = '''
+nnoremap  <leader> j：AnyJump <CR>
+'''
