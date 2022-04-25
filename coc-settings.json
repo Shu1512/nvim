@@ -1,0 +1,38 @@
+{
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "svelte": "html",
+    "blade": "html"
+  },
+  "eslint.probe": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "svelte"
+  ],
+  "Lua.runtime.version": "LuaJIT",
+  "Lua.workspace.library": {
+    "/usr/lib/lua": true,
+    "/usr/lib/lua-pam/": true,
+    "/usr/share/awesome/lib": true
+  },
+  "prettier.semi": false,
+  "prettier.trailingComma": "all",
+  "prettier.singleQuote": true,
+  "tailwindCSS.headwind.runOnSave": false,
+  "vetur.experimental.templateInterpolationService": true,
+  "languageserver": {
+    "intelephense": {
+      "command": "intelephense",
+      "args": ["--stdio"],
+      "filetypes": ["php"],
+      "initializationOptions": {
+        "storagePath": "/tmp/intelephense"
+      }
+    }
+  },
+  "svelte.ask-to-enable-ts-plugin": false,
+  "python.jediEnabled": false
+}
