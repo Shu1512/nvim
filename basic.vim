@@ -139,10 +139,13 @@ let $LANG='ja'
 set langmenu=ja
 
 " Set utf8 as standard encoding
-set encoding=utf8
+set encoding=utf-8
 
 " Use Unix as the standard file type
-set ffs=unix,dos,mac
+set fileformats=unix,dos,mac
+
+lang en_US.UTF-8
+set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

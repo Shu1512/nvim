@@ -45,8 +45,14 @@ vim.cmd([[
 packer = packer or require("packer")
 
 return packer.startup(function(use)
-    -- yo dawg, I heard you like plugin managers
-    use "wbthomason/packer.nvim"
+  -- yo dawg, I heard you like plugin managers
+  use "wbthomason/packer.nvim"
+
+  -- autopairs
+  use {
+    'windwp/nvim-autopairs',
+    config = function() require("configs.autopairs") end,
+  }
 
   -- fern.vim
   use {
