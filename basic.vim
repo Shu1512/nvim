@@ -19,8 +19,8 @@ set backspace=indent,eol,start
 map Q gq
 
 " Enable filetype plugins
-filetype plugin on
 filetype indent on
+filetype plugin indent on
 
 " Delete comment character when joining commented lines
 set formatoptions+=j
@@ -145,7 +145,7 @@ set encoding=utf-8
 set fileformats=unix,dos,mac
 
 lang en_US.UTF-8
-set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
+set fileencodings=utf-8
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -289,6 +289,11 @@ au BufReadPost *
   \ |   exe "normal! g`\""
   \ | endif
 
+" Move current line to up/down
+inoremap <C-j> <Esc>:m .+1<CR>==gi
+inoremap <C-k> <Esc>:m .-2<CR>==gi
+vnoremap <C-j> :m '>+1<CR>gv=gv
+vnoremap <C-k> :m '<-2<CR>gv=gv
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Helper functions

@@ -10,6 +10,7 @@ ts_config.setup {
     "html",
     "javascript",
     "typescript",
+    "vue",
     "tsx",
     "svelte",
     "astro",
